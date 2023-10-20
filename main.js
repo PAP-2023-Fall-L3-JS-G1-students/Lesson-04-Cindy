@@ -8,6 +8,12 @@ Inside the function, change "Hello World" to greeting to log it in the console
 5. Edit the function call to include a string argument - the greeting of your choice.
 */
 
+function greet(greeting) {
+    console.log(greeting)
+}
+greet("Hello World!");
+
+
 
 
 
@@ -19,8 +25,14 @@ Inside factOne(), set the textContent of the p tag to a string containing a moon
 Set its value to call the factOne() function
 */
 
-
-
+const factOneTag = document.querySelector('#moon-fact-1');
+let factOneIcon = document.querySelector('#fact-1-icon');
+function factOne() {
+    factOneTag.textContent = "The Moon is drifting away from the Earth. It is moving approximately 3.8 cm away from our planet every year.";
+    factOneIcon.src ="pin-blue.png";
+}
+const pin = document.querySelector('#fact-1-icon');
+factOneIcon.addEventListener('click', factOne);
 
 /* Exercise 3
 1. In main.js, use the DOM to select the p tag with id moon-fact-2 and assign it a variable
@@ -29,6 +41,55 @@ Inside factTwo(), set the textContent of the p tag to a string containing a moon
 3. Outside the function, use the DOM to select the pin image tag with id fact-2-icon
 4. Use the .addEventListener() method to add a click event listener to the flag image. Have it call function factTwo on click
 */
+
+const factTwoTag = document.querySelector('#moon-fact-2');
+let factTwoIcon = document.querySelector('#fact-2-icon');
+function factTwo() {
+    factTwoTag.textContent = "Although it appears bright in the night sky, the Moon's surface is actually dark, with a reflectance just slightly higher than that of worn asphalt.";
+    factTwoIcon.src = "pin-blue.png";
+}
+const pin2 = document.querySelector('#fact-2-icon');
+factTwoTag.addEventListener('click', factTwo);
+
+
+const factThreeTag = document.querySelector('#moon-fact-3');
+let factThreeIcon = document.querySelector('#fact-3-icon');
+function factThree() {
+    factThreeTag.textContent = "The Moon always shows Earth the same face, it is in synchronous rotation with Earth.";
+    factThreeIcon.src = "pin-blue.png";
+}
+const pin3 = document.querySelector('#fact-3-icon');
+factThreeTag.addEventListener('click', factThree);
+
+
+const factFourTag = document.querySelector('#moon-fact-4');
+let factFourIcon = document.querySelector('#fact-4-icon');
+function factFour() {
+    factFourTag.textContent = "The Moon is the second densest satellite, among those whose densities are known. The first densest is Jupiter's satellite Io.";
+    factFourIcon.src ="pin-blue.png";
+}
+const pin4 = document.querySelector('#fact-4-icon');
+factFourTag.addEventListener('click', factFour);
+
+
+const factFiveTag = document.querySelector('#moon-fact-5');
+let factFiveIcon = document.querySelector('#fact-5-icon');
+function factFive() {
+    factFiveTag.textContent = "There is water on the Moon! It has been detected on areas of the lunar surface that are in permanent shadow and was likely delivered to the surface by comets.";
+    factFiveIcon.src = "pin-blue.png";
+}
+const pin5 = document.querySelector('#fact-5-icon');
+factFiveTag.addEventListener('click', factFive);
+
+
+const secretTag = document.querySelector('#moon-fact-6');
+let secretIcon = document.querySelector('#secret-icon');
+function secret() {
+    secretTag.textContent = "The Moon has quakes called moonquakes. They are caused by the gravitational influence of the Earth and can last up to half an hour.";
+    secretIcon.src = "alien-ship.png";
+}
+const pin6 = document.querySelector('#secret-icon');
+secretTag.addEventListener('click', secret);
 
 /* Exercise 4
 1. Inside function factTwo(), set the src property of factTwoIcon to a string containing pin-blue.png
@@ -47,6 +108,8 @@ Change the flag image to pin-blue.png, use either the variable or the this keywo
 3. Outside the function, add an event listener for the click event and have it call the factThree function
 4. Repeat the same steps for moon-fact-4, moon-fact-5
 
+
+
 Secret alien base
 5. Use the querySelector method to select the p tag with id moon-fact-6
 6. Create a function called secret()
@@ -54,6 +117,7 @@ Inside the function, change the textContent of the p tag to text about a secret 
 Change the flag image to the alien ship
 7. Outside the function, add an event listener for the click event and have it call the secret function
 */
+
 
 
 
