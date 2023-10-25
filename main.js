@@ -42,54 +42,54 @@ Inside factTwo(), set the textContent of the p tag to a string containing a moon
 4. Use the .addEventListener() method to add a click event listener to the flag image. Have it call function factTwo on click
 */
 
-const factTwoTag = document.querySelector('#moon-fact-2');
+const factTwoTag = document('#moon-fact-2');
 let factTwoIcon = document.querySelector('#fact-2-icon');
 function factTwo() {
     factTwoTag.textContent = "Although it appears bright in the night sky, the Moon's surface is actually dark, with a reflectance just slightly higher than that of worn asphalt.";
     factTwoIcon.src = "pin-blue.png";
 }
 const pin2 = document.querySelector('#fact-2-icon');
-factTwoTag.addEventListener('click', factTwo);
+factTwoIcon.addEventListener('click', factTwo);
 
 
-const factThreeTag = document.querySelector('#moon-fact-3');
+const factThreeTag = document('#moon-fact-3');
 let factThreeIcon = document.querySelector('#fact-3-icon');
 function factThree() {
     factThreeTag.textContent = "The Moon always shows Earth the same face, it is in synchronous rotation with Earth.";
     factThreeIcon.src = "pin-blue.png";
 }
 const pin3 = document.querySelector('#fact-3-icon');
-factThreeTag.addEventListener('click', factThree);
+factThreeIcon.addEventListener('click', factThree);
 
 
-const factFourTag = document.querySelector('#moon-fact-4');
+const factFourTag = document('#moon-fact-4');
 let factFourIcon = document.querySelector('#fact-4-icon');
 function factFour() {
     factFourTag.textContent = "The Moon is the second densest satellite, among those whose densities are known. The first densest is Jupiter's satellite Io.";
     factFourIcon.src ="pin-blue.png";
 }
 const pin4 = document.querySelector('#fact-4-icon');
-factFourTag.addEventListener('click', factFour);
+factFourIcon.addEventListener('click', factFour);
 
 
-const factFiveTag = document.querySelector('#moon-fact-5');
+const factFiveTag = document('#moon-fact-5');
 let factFiveIcon = document.querySelector('#fact-5-icon');
 function factFive() {
     factFiveTag.textContent = "There is water on the Moon! It has been detected on areas of the lunar surface that are in permanent shadow and was likely delivered to the surface by comets.";
     factFiveIcon.src = "pin-blue.png";
 }
 const pin5 = document.querySelector('#fact-5-icon');
-factFiveTag.addEventListener('click', factFive);
+factFiveIcon.addEventListener('click', factFive);
 
 
-const secretTag = document.querySelector('#moon-fact-6');
+const secretTag = document('#moon-fact-6');
 let secretIcon = document.querySelector('#secret-icon');
 function secret() {
     secretTag.textContent = "The Moon has quakes called moonquakes. They are caused by the gravitational influence of the Earth and can last up to half an hour.";
     secretIcon.src = "alien-ship.png";
 }
 const pin6 = document.querySelector('#secret-icon');
-secretTag.addEventListener('click', secret);
+secretIcon.addEventListener('click', secret);
 
 /* Exercise 4
 1. Inside function factTwo(), set the src property of factTwoIcon to a string containing pin-blue.png

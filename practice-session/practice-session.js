@@ -8,9 +8,50 @@ Exercise 1 - First question
 1. Examine the HTML so you can determine which tag to select, and add a unigue id to it. Use the DOM to select it.
 2. Create a function for a true answer and a function for a false answer. 
 Inside each function, show a comment that says either "Correct!" or "Incorrect!"
-3. Call the functions using an event attribute in index.html
+3. Call the functions using an event attribute in index.html */
 
-Exercise 2 - Second question
+/* answer 1 */
+
+let answerOneFalseTag = document.querySelector('#answer-1');
+let answerOneFalseIcon = document.querySelector('#answer-1-true-icon');
+function answerOneFalse() {
+    answerOneFalseTag.textContent = "Incorrect!";
+    answerOnefalseIcon.src = "thumbs-up.png";
+}
+let primary = document.querySelector('#answer-1-true-icon');
+answerOneFalseIcon.addEventListener('click', answerOneFalse);
+
+
+let answerOneTrueTag = document.querySelector('#answer-1');
+let answerOneTrueIcon = document.querySelector('#answer-1-false-icon');
+function answerOneTrue() {
+    answerOneTrueTag.textContent = "Correct!";
+    answerOneTrueIcon.src = "thumbs-up.png";
+}
+let contrast = document.querySelector('#answer-1-false-icon');
+answerOneTrueIcon.addEventListener('click', answerOneTrue);
+
+/* Answer 2 true or false */
+
+let answerTwoTrueTag = document.querySelector('#answer-2');
+let answerTwoTrueIcon = document.querySelector('#answer-2-true-icon');
+function answerTwoTrue() {
+    answerTwoTrueTag.textContent = "Correct!";
+    answerTwoTrueIcon.src = "thumbs-up.png";
+}
+let primary2 = document.querySelector('#answer-2-true-icon');
+answerTwoTrueIcon.addEventListener('click', answerTwoTrue);
+
+let answerTwoFalseTag = document.querySelector('#answer-2');
+let answerTwoFalseIcon = document.addEventListener('#answer-2-false-icon');
+function answerTwoFalse() {
+    answerTwoFalseTag.textContent = "Incorrect!";
+    answerTwoFalseIcon.src = "thumbs-up.png";
+}
+let contrast2 = document.querySelector('#answer-2-false-icon');
+answerTwoFalseIcon.addEventListener('click', answerTwoFalse);
+
+/*Exercise 2 - Second question
 This time, when a user clicks, next to the words Correct or Incorrect inside the comment, show the user an image, thumbs-up.png or thumbs-down.png
 Look at the example screenshot to see what the output should look like.
 Also, use the addEventListener method instead of an event attribute to call the functions.
