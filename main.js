@@ -26,12 +26,11 @@ Set its value to call the factOne() function
 */
 
 const factOneTag = document.querySelector('#moon-fact-1');
-let factOneIcon = document.querySelector('#fact-1-icon');
 function factOne() {
     factOneTag.textContent = "The Moon is drifting away from the Earth. It is moving approximately 3.8 cm away from our planet every year.";
-    factOneIcon.src ="pin-blue.png";
+    this.src ="pin-blue.png";
 }
-const pin = document.querySelector('#fact-1-icon');
+const factOneIcon = document.querySelector('#fact-1-icon');
 factOneIcon.addEventListener('click', factOne);
 
 /* Exercise 3
@@ -42,54 +41,50 @@ Inside factTwo(), set the textContent of the p tag to a string containing a moon
 4. Use the .addEventListener() method to add a click event listener to the flag image. Have it call function factTwo on click
 */
 
-const factTwoTag = document('#moon-fact-2');
-let factTwoIcon = document.querySelector('#fact-2-icon');
+const factTwoTag = documet.querySelector('#moon-fact-2');
 function factTwo() {
     factTwoTag.textContent = "Although it appears bright in the night sky, the Moon's surface is actually dark, with a reflectance just slightly higher than that of worn asphalt.";
-    factTwoIcon.src = "pin-blue.png";
+    this.src = "pin-blue.png";
 }
-const pin2 = document.querySelector('#fact-2-icon');
+const factTwoIcon = document.querySelector('#fact-2-icon');
 factTwoIcon.addEventListener('click', factTwo);
 
 
-const factThreeTag = document('#moon-fact-3');
-let factThreeIcon = document.querySelector('#fact-3-icon');
+const factThreeTag = document.querySelector('#moon-fact-3');
 function factThree() {
     factThreeTag.textContent = "The Moon always shows Earth the same face, it is in synchronous rotation with Earth.";
-    factThreeIcon.src = "pin-blue.png";
+    this.src = "pin-blue.png";
 }
-const pin3 = document.querySelector('#fact-3-icon');
+const factThreeIcon = document.querySelector('#fact-3-icon');
 factThreeIcon.addEventListener('click', factThree);
 
 
-const factFourTag = document('#moon-fact-4');
-let factFourIcon = document.querySelector('#fact-4-icon');
+const factFourTag = document.querySelector('#moon-fact-4');
 function factFour() {
     factFourTag.textContent = "The Moon is the second densest satellite, among those whose densities are known. The first densest is Jupiter's satellite Io.";
-    factFourIcon.src ="pin-blue.png";
+    this.src ="pin-blue.png";
 }
-const pin4 = document.querySelector('#fact-4-icon');
+const factFourIcon = document.querySelector('#fact-4-icon');
 factFourIcon.addEventListener('click', factFour);
 
 
-const factFiveTag = document('#moon-fact-5');
-let factFiveIcon = document.querySelector('#fact-5-icon');
+const factFiveTag = document.querySelector('#moon-fact-5');
 function factFive() {
     factFiveTag.textContent = "There is water on the Moon! It has been detected on areas of the lunar surface that are in permanent shadow and was likely delivered to the surface by comets.";
-    factFiveIcon.src = "pin-blue.png";
+    this.src = "pin-blue.png";
 }
-const pin5 = document.querySelector('#fact-5-icon');
+const factFiveIcon = document.querySelector('#fact-5-icon');
 factFiveIcon.addEventListener('click', factFive);
 
 
-const secretTag = document('#moon-fact-6');
-let secretIcon = document.querySelector('#secret-icon');
+const secretTag = document.querySelector('#moon-fact-6');
 function secret() {
     secretTag.textContent = "The Moon has quakes called moonquakes. They are caused by the gravitational influence of the Earth and can last up to half an hour.";
-    secretIcon.src = "alien-ship.png";
+    this.src = "alien-ship.png";
 }
-const pin6 = document.querySelector('#secret-icon');
+const secretIcon = document.querySelector('#secret-icon');
 secretIcon.addEventListener('click', secret);
+
 
 /* Exercise 4
 1. Inside function factTwo(), set the src property of factTwoIcon to a string containing pin-blue.png
